@@ -34,12 +34,6 @@ document.getElementById('formContacto').addEventListener('submit', function (e) 
     return;
   }
 
-  // Validar asunto no vacío
-  if (!asunto) {
-    alert('Por favor, ingrese el asunto.');
-    return;
-  }
-
   // Si pasa todas las validaciones:
   alert('Su mensaje ha sido enviado. Nos pondremos en contacto con usted lo antes posible.');
   window.location.href = './Enviado.html';

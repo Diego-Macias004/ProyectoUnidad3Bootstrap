@@ -15,7 +15,7 @@ document.getElementById('formContacto').addEventListener('submit', function (e) 
   }
 
   // Validar correo: formato general y que termine en @gmail.com
-  const regexCorreo = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;+
+  const regexCorreo = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
   if(!regexCorreo.test(correo)) {
     alert('Por favor, ingrese un correo válido que termine en @gmail.com.');
     return;

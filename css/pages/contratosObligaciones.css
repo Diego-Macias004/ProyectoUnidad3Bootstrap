@@ -3,13 +3,11 @@
 
 body {
     margin: 0;
-    font-family: 'Arima', cursive;
-    background-image: url('../../assets/ImagenesWeb/cobranza%20y%20deudas.png');
+    background-image: url("../../assets/ImagenesWeb/contratos\ y\ obligaciones.jpg");
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    font-family: 'Arima Madurai', cursive;
+    color: black;
 }
 
 .top-bar {
@@ -25,7 +23,7 @@ body {
 .titulo-central {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%);/* Desplaza el elemento un -50% de su propio ancho hacia la izquierda */ 
     background-color: white;
     padding: 8px 25px;
     border-radius: 6px;
@@ -34,7 +32,11 @@ body {
     font-size: 20px;
     color: #000;
     margin: 0;
-    white-space: nowrap;
+}
+
+.icono-izquierda img {
+    width: 25px;
+    height: auto;
 }
 
 .icono-izquierda {
@@ -43,17 +45,12 @@ body {
     border-radius: 6px;
     display: flex;
     align-items: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
+    justify-content: center;
+    transition: background-color 0.3s ease;/* Transición suave del color de fondo: 0.3 segundos con efecto ease*/
 }
 
 .icono-izquierda:hover {
     background-color: #e0e0e0;
-}
-
-.icono-izquierda img {
-    width: 25px;
-    height: auto;
 }
 
 .logo {
@@ -61,33 +58,42 @@ body {
     height: auto;
 }
 
-.contenido {
-    background-color: rgba(204, 196, 184, 0.95);
-    padding: 30px;
-    border-radius: 10px;
-    max-width: 900px;
-    margin: 40px auto;
+h1 {
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    margin: 30px auto;
 }
 
-.contenido p,
-.contenido ul {
-    font-family: 'Arima', cursive;
+.contenido {
+    background: #CCC4B8;
+    border-radius: 10px;
+}
+
+.texto p,
+.texto ul {
+    font-family: 'Arima Madurai', cursive;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 15px;
 }
 
-.contenido ul {
+.texto ul {
     list-style: none;
     padding-left: 0;
 }
 
-.contenido li {
+.texto li {
     margin-bottom: 8px;
 }
 
 .sub-servicio {
     text-align: center;
+    font-family: 'Arima Madurai', cursive;
+    font-weight: bold;
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -95,14 +101,15 @@ body {
 
 .final {
     font-size: 18px;
+    color: #000;
     text-align: right;
 }
 
 footer {
-    background-color: #333;
-    color: white;
+    background: #333;
     text-align: center;
-    padding: 6px;
-    font-size: 12px;
-    margin-top: auto;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 10px;
 }

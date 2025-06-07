@@ -3,11 +3,13 @@
 
 body {
     margin: 0;
-    background-image: url("../../assets/ImagenesWeb/contratos\ y\ obligaciones.jpg");
+    font-family: 'Arima', cursive;
+    background-image: url("../../assets/ImagenesWeb/derecho de familia.png");
     background-size: cover;
     background-position: center;
-    font-family: 'Arima Madurai', cursive;
     color: black;
+    min-height: 100vh;
+    padding-bottom: 40px;
 }
 
 .top-bar {
@@ -23,7 +25,7 @@ body {
 .titulo-central {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);/* Desplaza el elemento un -50% de su propio ancho hacia la izquierda */ 
+    transform: translateX(-50%);
     background-color: white;
     padding: 8px 25px;
     border-radius: 6px;
@@ -34,11 +36,6 @@ body {
     margin: 0;
 }
 
-.icono-izquierda img {
-    width: 25px;
-    height: auto;
-}
-
 .icono-izquierda {
     background-color: white;
     padding: 8px;
@@ -46,11 +43,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease;/* Transición suave del color de fondo: 0.3 segundos con efecto ease*/
+    transition: background-color 0.3s ease;
 }
 
 .icono-izquierda:hover {
     background-color: #e0e0e0;
+}
+
+.icono-izquierda img {
+    width: 25px;
+    height: auto;
 }
 
 .logo {
@@ -58,24 +60,16 @@ body {
     height: auto;
 }
 
-h1 {
-    text-align: center;
-    background-color: white;
-    display: inline-block;
-    padding: 10px 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    margin: 30px auto;
-}
-
 .contenido {
-    background: #CCC4B8;
+    max-width: 900px;
+    margin: 50px auto;
+    background: #ccc4b8;
+    padding: 30px;
     border-radius: 10px;
 }
 
 .texto p,
 .texto ul {
-    font-family: 'Arima Madurai', cursive;
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 15px;
@@ -92,8 +86,6 @@ h1 {
 
 .sub-servicio {
     text-align: center;
-    font-family: 'Arima Madurai', cursive;
-    font-weight: bold;
     font-size: 20px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -101,13 +93,14 @@ h1 {
 
 .final {
     font-size: 18px;
-    color: #000;
     text-align: right;
 }
 
 footer {
     background: #333;
+    color: white;
     text-align: center;
+    padding: 0.5px;
     position: fixed;
     width: 100%;
     bottom: 0;

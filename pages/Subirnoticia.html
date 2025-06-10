@@ -19,26 +19,27 @@
     </div>
   </header>
 
-  <form>
-    <div class="mb-3">
-      <label for="titulo" class="form-label">Título de la noticia</label>
-      <input type="text" class="form-control" id="titulo" name="titulo" required>
-    </div>
+  <form id="formNoticia">
+  <div class="mb-3">
+    <label for="titulo" class="form-label">Título de la noticia</label>
+    <input type="text" class="form-control" id="titulo" name="titulo" required>
+  </div>
 
-    <div class="mb-3">
-      <label for="resumen" class="form-label">Resumen/Introducción</label>
-      <textarea class="form-control" id="resumen" name="resumen" rows="5" required></textarea>
-    </div>
+  <div class="mb-3">
+    <label for="resumen" class="form-label">Resumen/Introducción</label>
+    <textarea class="form-control" id="resumen" name="resumen" rows="5" required></textarea>
+  </div>
 
-    <div class="mb-3">
-      <label for="fuente" class="form-label">Fuente/Referencia</label>
-      <input type="text" class="form-control" id="fuente" name="fuente">
-    </div>
+  <div class="mb-3">
+    <label for="fuente" class="form-label">URL de la noticia</label>
+    <input type="url" class="form-control" id="fuente" name="fuente" required>
+  </div>
 
-    <div class="text-center">
-      <button type="submit" class="btn boton-publicar">PUBLICAR</button>
-    </div>
-  </form>
+  <div class="text-center">
+    <button type="submit" class="btn boton-publicar">PUBLICAR</button>
+  </div>
+</form>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/subirnoticia.js"></script>
 </body>
 </html>
